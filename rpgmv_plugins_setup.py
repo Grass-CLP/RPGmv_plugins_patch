@@ -31,7 +31,7 @@ def get_patch_plugins():
 
 
 def write_plugins(plugins=dict()):
-    output = key_word + json.dumps(plugins, indent=True) + ";"
+    output = key_word + json.dumps(plugins, indent=True, ensure_ascii=False).encode('utf-8') + ";"
     with open(pwd + plugins_file, 'w') as f:
         f.write(output)
 
