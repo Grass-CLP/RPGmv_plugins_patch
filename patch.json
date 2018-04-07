@@ -1,0 +1,51 @@
+[
+	{
+		"name": "GamepadConfig",
+		"status": true,
+		"description": "gamepad",
+		"parameters": {
+			"Command Name": "Gamepad Config",
+			"OK Button": "OK / Talk",
+			"OK Help": "Used to accept menu actions and talk to people",
+			"Cancel Button": "Cancel",
+			"Cancel Help": "Used to cancel menu actions",
+			"Shift Button": "Dash",
+			"Shift Help": "Hold this button to dash on the field",
+			"Menu Button": "Menu",
+			"PageUp Button": "Page Up",
+			"PageDown Button": "Page Down",
+			"Reset Default": "Reset to Default",
+			"Finish Config": "Finish Configuration"
+		}
+	},
+	{
+		"name": "KeyboardConfig",
+		"status": true,
+		"description": "v1.00 Allows players to adjust their button configuration\nfor keyboards.",
+		"parameters": {
+			"Command Name": "Keyboard Config",
+			"Key Help": "Change the configuration of this key?",
+			"Default Layout": "Default Keyboard Layout",
+			"Default Help": "Reverts your keyboard setting to the default setup.",
+			"WASD Layout": "WASD Movement Layout",
+			"WASD Help": "Changes your keyboard to WASD movement.",
+			"Finish Config": "Finish Configuration",
+			"Finish Help": "Are you done configuring your keyboard?",
+			"Assigned Color": "21",
+			"Action Color": "4",
+			"Clear Text": "Clear"
+		}
+	},
+	{
+		"name": "Cheat_Menu",
+		"status": true,
+		"description": "",
+		"parameters": {}
+	},
+	{
+		"name": "AutoSave",
+		"status": true,
+		"description": "",
+		"parameters": {}
+	}
+]
