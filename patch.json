@@ -19,24 +19,6 @@
 		}
 	},
 	{
-		"name": "KeyboardConfig",
-		"status": true,
-		"description": "v1.00 Allows players to adjust their button configuration\nfor keyboards.",
-		"parameters": {
-			"Command Name": "Keyboard Config",
-			"Key Help": "Change the configuration of this key?",
-			"Default Layout": "Default Keyboard Layout",
-			"Default Help": "Reverts your keyboard setting to the default setup.",
-			"WASD Layout": "WASD Movement Layout",
-			"WASD Help": "Changes your keyboard to WASD movement.",
-			"Finish Config": "Finish Configuration",
-			"Finish Help": "Are you done configuring your keyboard?",
-			"Assigned Color": "21",
-			"Action Color": "4",
-			"Clear Text": "Clear"
-		}
-	},
-	{
 		"name": "Cheat_Menu",
 		"status": true,
 		"description": "",
