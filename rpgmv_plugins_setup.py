@@ -6,6 +6,7 @@
 #
 import json
 import os
+from shutil import copyfile
 
 plugins_file = "/www/js/plugins.js"
 patch_plugins_file = "patch.json"
@@ -38,6 +39,7 @@ def write_plugins(plugins=dict()):
 
 def main():
     try:
+        copyfile(pwd + plugins_file, pwd + plugins_file + '.bk')
         orgi_plugins = get_plugins()
         patch_plugins = get_patch_plugins()
         for k, v in patch_plugins.iteritems():
