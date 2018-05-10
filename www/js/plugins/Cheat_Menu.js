@@ -230,16 +230,19 @@ Cheat_Menu.initialize_speed_lock = function() {
 		Cheat_Menu.speed = $gamePlayer._moveSpeed;
 		Object.defineProperty($gamePlayer, "_moveSpeed", {
 			get: function() {return Cheat_Menu.speed;},
+			// set: function(newVal) {if(Cheat_Menu.speed_unlocked) {Cheat_Menu.speed = newVal;}}
 			set: function(newVal) {if(Cheat_Menu.speed_unlocked) {Cheat_Menu.speed = newVal;}}
 		});
 		Cheat_Menu.speed_initialized = true;
 	}
+	Cheat_Menu.speed = $gamePlayer._moveSpeed;
 };
 
 // change player movement speed
 Cheat_Menu.change_player_speed = function(amount) {
 	Cheat_Menu.initialize_speed_lock();
 	Cheat_Menu.speed += amount;
+	$gamePlayer._moveSpeed = Cheat_Menu.speed;
 };
 
 // toggle locking of player speed
@@ -1082,7 +1085,7 @@ Cheat_Menu.append_variable_selection = function(key1, key2, key3, key4) {
 	Cheat_Menu.append_title("Variable");
 	var current_variable = "";
 	if ($dataSystem.variables[Cheat_Menu.variable_selection] && $dataSystem.variables[Cheat_Menu.variable_selection].length > 0) {
-		current_variable = $dataSystem.variables[Cheat_Menu.variable_selection];
+		current_variable = Cheat_Menu.variable_selection + ' ' + $dataSystem.variables[Cheat_Menu.variable_selection];
 	}
 	else {
 		current_variable = "NULL";
